@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <h1>/{{board.ContextBoard.path}}/ - {{board.ContextBoard.name}}</h1>
+    <form method="post" action="/{{board.ContextBoard.path}}/post" autocomplete="off" enctype="multipart/form-data">
+        <input type="text" id="text" name="text"><br>
+        <input type=file name="image"><br/>
+        <input type="submit" value="Post"/>
+    </form>
+    <div id="posts">
+        {% for post in posts.ContextPosts %}
+            <hr/>
+            <p>{{post.text}}</p>
+        {% endfor %}
+    </div>
+</body>

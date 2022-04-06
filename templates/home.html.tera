@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <ul>
   {% for board in boards %}
-    <li>/{{board.path}}/ - {{board.name}}</li>
+    <li><a href=/{{board.path}}/>/{{board.path}}/ - {{board.name}}</a></li>
   {% endfor %}
 </ul>
